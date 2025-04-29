@@ -1,0 +1,29 @@
+{
+  "schemaNamespace" : "GQLK",
+  "input" : {
+    "operationSearchPaths" : [
+        "./Kulushae/Apollo/GraphQL/**/*.graphql"
+    ],
+    "schemaSearchPaths" : [
+        "./Kulushae/Apollo/schema.json"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+        "path" : "./Kulushae/Apollo/GraphQLSwift",
+      "moduleType" : {
+        "embeddedInTarget" : {
+          "name" : "GQLK"
+        }
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

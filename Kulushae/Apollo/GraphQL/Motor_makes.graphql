@@ -1,0 +1,12 @@
+query Motor_makes($page: Int, $value: String) {
+  motor_makes(page: $page, value: $value) {
+    current_page
+    per_page
+    total
+    data {
+      id
+      image
+      title
+    }
+  }
+}

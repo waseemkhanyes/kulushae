@@ -1,0 +1,16 @@
+query Categories($showOnScreen: Int, $afl: Int, $categoryId: Int){
+  categories(show_on_screen: $showOnScreen, afl: $afl, category_id: $categoryId) {
+    has_child
+    active_for_listing
+    id
+    image
+    parent_id
+    show_on_screen
+    title
+    has_form
+    days
+    price
+    service_type
+    bgColor
+  }
+}

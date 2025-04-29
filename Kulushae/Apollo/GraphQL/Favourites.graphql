@@ -1,0 +1,23 @@
+query Favourites($userId: Int, $page: Int) {
+  favourites(user_id: $userId, page: $page) {
+    current_page
+    per_page
+    total
+    data {
+      id
+      image
+      size
+      location
+      title
+      type
+      user_id
+      bathrooms
+      bedrooms
+      price
+      car_year
+      car_steering
+      car_specs
+      car_kilometers
+    }
+  }
+}

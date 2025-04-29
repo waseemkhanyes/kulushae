@@ -1,0 +1,6 @@
+mutation Update_property($itemId: Int, $args: JSON) {
+  update_property(item_id: $itemId, args: $args) {
+    status
+    message
+  }
+}

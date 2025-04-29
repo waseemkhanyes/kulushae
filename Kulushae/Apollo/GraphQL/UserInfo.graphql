@@ -1,0 +1,11 @@
+query UserInfo($userInfoId: Int) {
+  userInfo(id: $userInfoId) {
+    id
+    image
+    first_name
+    last_name
+    email
+    phone
+    createdAt
+  }
+}

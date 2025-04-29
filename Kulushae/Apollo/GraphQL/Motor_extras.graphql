@@ -1,0 +1,6 @@
+query Motor_extras {
+  motor_extras {
+    id
+    title
+  }
+}

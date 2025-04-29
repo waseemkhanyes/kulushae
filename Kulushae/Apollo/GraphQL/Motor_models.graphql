@@ -1,0 +1,8 @@
+query Motor_models($makeId: Int) {
+  motor_models(make_id: $makeId) {
+    id
+    image
+    title
+    motor_make_id
+  }
+}

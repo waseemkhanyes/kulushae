@@ -1,0 +1,55 @@
+query Property($propertyId: Int) {
+  property(id: $propertyId) {
+    id
+    country
+    emirates
+    title
+    contact_number
+    price
+    description
+    socialmedia {
+      id
+      type
+      value
+    }
+    size
+    total_closing_fee
+    bedrooms
+    bathrooms
+    developer
+    ready_by
+    annual_community_fee
+    furnished
+    reference_number
+    buyer_transfer_fee
+    seller_transfer_fee
+    maintenance_fee
+    occupancy_status
+    amenities {
+      id
+      title
+    }
+    posted_by
+    user_id {
+      id
+      image
+      first_name
+      last_name
+      email
+      phone
+      member_since
+      total_listings
+    }
+    neighbourhood
+    location
+    category_id
+    images {
+      id
+      image
+    }
+    is_featured
+    is_favorite
+    type
+    deposit
+  }
+}

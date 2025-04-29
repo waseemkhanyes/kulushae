@@ -1,0 +1,13 @@
+mutation Store_property($args: JSON) {
+  store_property(args: $args) {
+    message
+    status
+    payment {
+      amount
+      cart_description
+      cart_id
+      country_code
+      currency_code
+    }
+  }
+}

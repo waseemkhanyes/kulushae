@@ -1,0 +1,7 @@
+mutation UserVerfication($value: String, $type: String) {
+  userVerfication(value: $value, type: $type) {
+    isExist
+    status
+    token
+  }
+}

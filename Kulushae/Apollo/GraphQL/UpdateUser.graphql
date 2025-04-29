@@ -1,0 +1,11 @@
+mutation UpdateUser($userId: Int, $values: JSON) {
+  updateUser(user_id: $userId, values: $values) {
+    id
+    image
+    first_name
+    last_name
+    email
+    phone
+    createdAt
+  }
+}

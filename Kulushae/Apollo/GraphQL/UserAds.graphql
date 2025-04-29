@@ -1,0 +1,14 @@
+query UserAds($userId: Int, $page: Int) {
+  userAds(user_id: $userId, page: $page) {
+    current_page
+    per_page
+    total
+    data {
+      id
+      image
+      title
+      type
+      user_id
+    }
+  }
+}

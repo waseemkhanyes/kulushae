@@ -1,0 +1,13 @@
+mutation Store_motors($args: JSON) {
+  store_motors(args: $args) {
+    message
+    payment {
+      currency_code
+      country_code
+      cart_description
+      cart_id
+      amount
+    }
+    status
+  }
+}

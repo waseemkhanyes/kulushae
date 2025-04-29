@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "imgFilter.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

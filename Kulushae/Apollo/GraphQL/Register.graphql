@@ -1,0 +1,18 @@
+mutation Register($firstName: String, $lastName: String, $email: String, $phone: String, $type: String, $registerId: String, $deviceVersion: String, $deviceModel: String, $deviceMake: String, $deviceType: String, $deviceId: String, $fcmToken: String, $password: String) {
+  register(first_name: $firstName, last_name: $lastName, email: $email, phone: $phone, type: $type, id: $registerId, device_version: $deviceVersion, device_model: $deviceModel, device_make: $deviceMake, device_type: $deviceType, device_id: $deviceId, fcm_token: $fcmToken, password: $password) {
+    user {
+      id
+      image
+      first_name
+      last_name
+      email
+      phone
+      is_premium
+      createdAt
+    }
+    token
+    refresh_token
+    message
+    status
+  }
+}

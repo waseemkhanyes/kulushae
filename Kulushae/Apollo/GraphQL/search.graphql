@@ -1,0 +1,9 @@
+query Search($value: String!, $serviceType: String!) {
+  search(value: $value, service_type: $serviceType) {
+    ads
+    category
+    category_id
+    title
+    type
+  }
+}

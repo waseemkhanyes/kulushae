@@ -1,0 +1,3 @@
+mutation DeleteAds($ids: [DeleteItem]!) {
+  delete_item(ids: $ids)
+}

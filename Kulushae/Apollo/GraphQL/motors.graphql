@@ -1,0 +1,64 @@
+query Motors($page: Int, $userId: Int, $categoryId: Int, $filters: JSON) {
+  motors(page: $page, user_id: $userId, category_id: $categoryId, filters: $filters) {
+    current_page
+    per_page
+    total
+    data {
+      id
+      country
+      emirates
+      make
+      make_id
+      model
+      model_id
+      trim
+      specs
+      year
+      kilometers
+      insured_in_uae
+      price
+      contact_info
+      title
+      desc
+      tour_url
+      fuel_type
+      exterior_color
+      interior_color
+      warranty
+      doors
+      no_of_cylinders
+      transmission_type
+      body_type
+      seating_capacity
+      horsepwer
+      engine_capacity
+      user_id {
+        id
+        image
+        first_name
+        last_name
+        email
+        phone
+        member_since
+        total_listings
+      }
+      steering_side
+      category_id
+      seller
+      type
+      extras {
+        id
+        title
+      }
+      images {
+        id
+        image
+      }
+      is_featured
+      is_favorite
+      is_active
+      is_published
+      is_new
+    }
+  }
+}

@@ -1,0 +1,11 @@
+query GetMessages($chatId: Int, $senderId: Int, $receiverId: Int, $categoryId: Int, $itemId: Int) {
+  getMessages(chat_id: $chatId, sender_id: $senderId, receiver_id: $receiverId, category_id: $categoryId, item_id: $itemId) {
+    chat_id
+    createdAt
+    id
+    message
+    receiver_id
+    sender_id
+    type
+  }
+}

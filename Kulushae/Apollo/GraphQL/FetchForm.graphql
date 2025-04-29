@@ -1,0 +1,15 @@
+query FetchForm($categoryId: Int!, $steps: Int) {
+  fetchForm(category_id: $categoryId, steps: $steps) {
+    field_extras
+    field_id
+    field_name
+    field_order
+    field_request_type
+    field_size
+    field_type
+    field_validation
+    id
+    steps
+    category_id
+  }
+}

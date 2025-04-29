@@ -1,0 +1,6 @@
+mutation Update_motors($itemId: Int, $args: JSON) {
+  update_motors(item_id: $itemId, args: $args) {
+    status
+    message
+  }
+}

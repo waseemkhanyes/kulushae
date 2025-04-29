@@ -1,0 +1,6 @@
+query Amenities {
+  amenities {
+    id
+    title
+  }
+}

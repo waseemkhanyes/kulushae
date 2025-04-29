@@ -1,0 +1,3 @@
+mutation Add_favorite($like: Boolean!, $itemId: Int, $type: String) {
+  add_favorite(like: $like, item_id: $itemId, type: $type)
+}
